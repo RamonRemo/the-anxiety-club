@@ -9,7 +9,28 @@ login
 home    
     mostra ali as midias q vc e seus amigos estao participando.
     data inicio e fim (talvez uma barra pra rastrear?)
+    perfil
     botao de logout
+
+
+perfil (seu proprio)
+    foto
+    nome
+    posts
+    clubes q vc participa
+    midia finalizada
+
+perfil (amigo)
+    posts, nome, foto, clubes. desfazer amizade
+
+perfil(desconhecido)
+    adicionar amigo
+    posts, nome, foto, clubes
+
+
+
+
+
     
 
 
