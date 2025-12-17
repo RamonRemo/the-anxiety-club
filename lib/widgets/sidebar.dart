@@ -17,6 +17,7 @@ class Sidebar extends StatelessWidget {
     return NavigationDrawer(
       selectedIndex: selectedIndex,
       onDestinationSelected: onItemSelected,
+      
       children: [
         Padding(
           padding: const EdgeInsets.all(16.0),
@@ -35,6 +36,10 @@ class Sidebar extends StatelessWidget {
           label: const Text('Perfil'),
         ),
         NavigationDrawerDestination(
+          icon: const Icon(Icons.chat),
+          label: const Text('Chat'),
+        ),
+        NavigationDrawerDestination(
           icon: const Icon(Icons.settings),
           label: const Text('Configurações'),
         ),
@@ -44,8 +49,8 @@ class Sidebar extends StatelessWidget {
           child: ElevatedButton(
             onPressed: onLogout,
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red,
-              foregroundColor: Colors.white,
+              backgroundColor: Theme.of(context).colorScheme.error,
+              foregroundColor: Theme.of(context).colorScheme.onError,
               minimumSize: const Size(double.infinity, 48),
             ),
             child: const Text('Logout'),
